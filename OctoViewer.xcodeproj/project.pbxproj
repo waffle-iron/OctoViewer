@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC23AFC61ED0E23B00D42C46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC23AFC51ED0E23B00D42C46 /* AppDelegate.swift */; };
+		DC23AFC81ED0E23B00D42C46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC23AFC71ED0E23B00D42C46 /* ViewController.swift */; };
+		DC23AFCB1ED0E23B00D42C46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC23AFC91ED0E23B00D42C46 /* Main.storyboard */; };
+		DC23AFCD1ED0E23B00D42C46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC23AFCC1ED0E23B00D42C46 /* Assets.xcassets */; };
+		DC23AFD01ED0E23B00D42C46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC23AFCE1ED0E23B00D42C46 /* LaunchScreen.storyboard */; };
+		DC23AFDB1ED0E23B00D42C46 /* OctoViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC23AFDA1ED0E23B00D42C46 /* OctoViewerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC23AFD71ED0E23B00D42C46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC23AFBA1ED0E23B00D42C46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC23AFC11ED0E23B00D42C46;
+			remoteInfo = OctoViewer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DC23AFC21ED0E23B00D42C46 /* OctoViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OctoViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC23AFC51ED0E23B00D42C46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC23AFC71ED0E23B00D42C46 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC23AFCA1ED0E23B00D42C46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC23AFCC1ED0E23B00D42C46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC23AFCF1ED0E23B00D42C46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC23AFD11ED0E23B00D42C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC23AFD61ED0E23B00D42C46 /* OctoViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OctoViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC23AFDA1ED0E23B00D42C46 /* OctoViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctoViewerTests.swift; sourceTree = "<group>"; };
+		DC23AFDC1ED0E23B00D42C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC23AFBF1ED0E23B00D42C46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC23AFD31ED0E23B00D42C46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC23AFB91ED0E23B00D42C46 = {
+			isa = PBXGroup;
+			children = (
+				DC23AFC41ED0E23B00D42C46 /* OctoViewer */,
+				DC23AFD91ED0E23B00D42C46 /* OctoViewerTests */,
+				DC23AFC31ED0E23B00D42C46 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC23AFC31ED0E23B00D42C46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC23AFC21ED0E23B00D42C46 /* OctoViewer.app */,
+				DC23AFD61ED0E23B00D42C46 /* OctoViewerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC23AFC41ED0E23B00D42C46 /* OctoViewer */ = {
+			isa = PBXGroup;
+			children = (
+				DC23AFC51ED0E23B00D42C46 /* AppDelegate.swift */,
+				DC23AFC71ED0E23B00D42C46 /* ViewController.swift */,
+				DC23AFC91ED0E23B00D42C46 /* Main.storyboard */,
+				DC23AFCC1ED0E23B00D42C46 /* Assets.xcassets */,
+				DC23AFCE1ED0E23B00D42C46 /* LaunchScreen.storyboard */,
+				DC23AFD11ED0E23B00D42C46 /* Info.plist */,
+			);
+			path = OctoViewer;
+			sourceTree = "<group>";
+		};
+		DC23AFD91ED0E23B00D42C46 /* OctoViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC23AFDA1ED0E23B00D42C46 /* OctoViewerTests.swift */,
+				DC23AFDC1ED0E23B00D42C46 /* Info.plist */,
+			);
+			path = OctoViewerTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC23AFC11ED0E23B00D42C46 /* OctoViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC23AFDF1ED0E23B00D42C46 /* Build configuration list for PBXNativeTarget "OctoViewer" */;
+			buildPhases = (
+				DC23AFBE1ED0E23B00D42C46 /* Sources */,
+				DC23AFBF1ED0E23B00D42C46 /* Frameworks */,
+				DC23AFC01ED0E23B00D42C46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OctoViewer;
+			productName = OctoViewer;
+			productReference = DC23AFC21ED0E23B00D42C46 /* OctoViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC23AFD51ED0E23B00D42C46 /* OctoViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC23AFE21ED0E23B00D42C46 /* Build configuration list for PBXNativeTarget "OctoViewerTests" */;
+			buildPhases = (
+				DC23AFD21ED0E23B00D42C46 /* Sources */,
+				DC23AFD31ED0E23B00D42C46 /* Frameworks */,
+				DC23AFD41ED0E23B00D42C46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC23AFD81ED0E23B00D42C46 /* PBXTargetDependency */,
+			);
+			name = OctoViewerTests;
+			productName = OctoViewerTests;
+			productReference = DC23AFD61ED0E23B00D42C46 /* OctoViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC23AFBA1ED0E23B00D42C46 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Hesham Salman";
+				TargetAttributes = {
+					DC23AFC11ED0E23B00D42C46 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 5RCR3KLKL5;
+						ProvisioningStyle = Automatic;
+					};
+					DC23AFD51ED0E23B00D42C46 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 5RCR3KLKL5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DC23AFC11ED0E23B00D42C46;
+					};
+				};
+			};
+			buildConfigurationList = DC23AFBD1ED0E23B00D42C46 /* Build configuration list for PBXProject "OctoViewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC23AFB91ED0E23B00D42C46;
+			productRefGroup = DC23AFC31ED0E23B00D42C46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC23AFC11ED0E23B00D42C46 /* OctoViewer */,
+				DC23AFD51ED0E23B00D42C46 /* OctoViewerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC23AFC01ED0E23B00D42C46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC23AFD01ED0E23B00D42C46 /* LaunchScreen.storyboard in Resources */,
+				DC23AFCD1ED0E23B00D42C46 /* Assets.xcassets in Resources */,
+				DC23AFCB1ED0E23B00D42C46 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC23AFD41ED0E23B00D42C46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC23AFBE1ED0E23B00D42C46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC23AFC81ED0E23B00D42C46 /* ViewController.swift in Sources */,
+				DC23AFC61ED0E23B00D42C46 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC23AFD21ED0E23B00D42C46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC23AFDB1ED0E23B00D42C46 /* OctoViewerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC23AFD81ED0E23B00D42C46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC23AFC11ED0E23B00D42C46 /* OctoViewer */;
+			targetProxy = DC23AFD71ED0E23B00D42C46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DC23AFC91ED0E23B00D42C46 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC23AFCA1ED0E23B00D42C46 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC23AFCE1ED0E23B00D42C46 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC23AFCF1ED0E23B00D42C46 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC23AFDD1ED0E23B00D42C46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC23AFDE1ED0E23B00D42C46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC23AFE01ED0E23B00D42C46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5RCR3KLKL5;
+				INFOPLIST_FILE = OctoViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.viewthespace.OctoViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DC23AFE11ED0E23B00D42C46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5RCR3KLKL5;
+				INFOPLIST_FILE = OctoViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.viewthespace.OctoViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		DC23AFE31ED0E23B00D42C46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5RCR3KLKL5;
+				INFOPLIST_FILE = OctoViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.viewthespace.OctoViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OctoViewer.app/OctoViewer";
+			};
+			name = Debug;
+		};
+		DC23AFE41ED0E23B00D42C46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5RCR3KLKL5;
+				INFOPLIST_FILE = OctoViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.viewthespace.OctoViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OctoViewer.app/OctoViewer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC23AFBD1ED0E23B00D42C46 /* Build configuration list for PBXProject "OctoViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC23AFDD1ED0E23B00D42C46 /* Debug */,
+				DC23AFDE1ED0E23B00D42C46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC23AFDF1ED0E23B00D42C46 /* Build configuration list for PBXNativeTarget "OctoViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC23AFE01ED0E23B00D42C46 /* Debug */,
+				DC23AFE11ED0E23B00D42C46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DC23AFE21ED0E23B00D42C46 /* Build configuration list for PBXNativeTarget "OctoViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC23AFE31ED0E23B00D42C46 /* Debug */,
+				DC23AFE41ED0E23B00D42C46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC23AFBA1ED0E23B00D42C46 /* Project object */;
+}
