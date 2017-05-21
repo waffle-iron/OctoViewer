@@ -1,9 +1,13 @@
 use_frameworks!
+platform :ios, '10.0'
+inhibit_all_warnings!
 
 def shared_pods
   pod 'Alamofire'
-  pod 'Moya'
-  pod 'Moya-Gloss'
+  pod 'Moya/ReactiveSwift'
+  pod 'Moya-Gloss/ReactiveSwift'
+  pod 'ReactiveCocoa'
+  pod 'ReactiveSwift'
   pod 'ReusableViews'
   pod 'SwiftLint'
 end
