@@ -14,7 +14,7 @@ enum GitHubService {
 }
 
 // MARK: - TargetType Protocol Implementation
-
+//swiftlint:disable force_unwrapping
 extension GitHubService: TargetType {
   var baseURL: URL { return URL(string: "https://api.github.com")! }
 

@@ -7,26 +7,41 @@
 //
 
 import UIKit
+import ReactiveSwift
+import ReactiveCocoa
+import Result
 import Moya
 
 class LaunchViewController: UIViewController {
+
+  var viewModel: LaunchViewModelType = LaunchViewModel()
   @IBOutlet weak var titleLabel: UILabel!
   @IBOutlet weak var zenLabel: UILabel!
   @IBOutlet weak var loginButton: UIButton!
   @IBOutlet weak var signupButton: UIButton!
 
-  var provider: MoyaProvider<GitHubService> = MoyaProvider()
-
   override func viewDidLoad() {
     super.viewDidLoad()
-    configureZenLabel()
-  }
-
-  private func configureZenLabel() {
-    provider.request(.zen) { [weak self] result in
-      if case let .success(moyaResponse) = result {
-        self?.zenLabel.text = try? moyaResponse.mapString()
+    viewModel.outputs.koanText.start { [weak self] event in
+      switch event {
+      case let .value(response):
+        self?.zenLabel.text = response
+      case let .failed(error):
+        print("Zen Error: \(error)")
+      default:
+        break
       }
     }
   }
+
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    navigationController?.setNavigationBarHidden(true, animated: animated)
+  }
+
+  override func viewWillDisappear(_ animated: Bool) {
+    super.viewWillDisappear(animated)
+    navigationController?.setNavigationBarHidden(false, animated: animated)
+  }
+
 }
