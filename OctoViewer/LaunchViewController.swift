@@ -10,12 +10,12 @@ import UIKit
 import Moya
 
 class LaunchViewController: UIViewController {
-  @IBOutlet private weak var titleLabel: UILabel!
-  @IBOutlet private weak var zenLabel: UILabel!
-  @IBOutlet private weak var loginButton: UIButton!
-  @IBOutlet private weak var signupButton: UIButton!
+  @IBOutlet weak var titleLabel: UILabel!
+  @IBOutlet weak var zenLabel: UILabel!
+  @IBOutlet weak var loginButton: UIButton!
+  @IBOutlet weak var signupButton: UIButton!
 
-  fileprivate let provider: MoyaProvider<GitHubService> = MoyaProvider()
+  var provider: MoyaProvider<GitHubService> = MoyaProvider()
 
   override func viewDidLoad() {
     super.viewDidLoad()

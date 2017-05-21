@@ -12,10 +12,11 @@
 		DC23AFC61ED0E23B00D42C46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC23AFC51ED0E23B00D42C46 /* AppDelegate.swift */; };
 		DC23AFCD1ED0E23B00D42C46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC23AFCC1ED0E23B00D42C46 /* Assets.xcassets */; };
 		DC23AFD01ED0E23B00D42C46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC23AFCE1ED0E23B00D42C46 /* LaunchScreen.storyboard */; };
-		DC23AFDB1ED0E23B00D42C46 /* OctoViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC23AFDA1ED0E23B00D42C46 /* OctoViewerTests.swift */; };
-		DCB7DF901ED11953001FE652 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCB7DF8F1ED11953001FE652 /* Main.storyboard */; };
+		DCB7DF901ED11953001FE652 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCB7DF8F1ED11953001FE652 /* Splash.storyboard */; };
 		DCB7DF921ED11C22001FE652 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7DF911ED11C22001FE652 /* LaunchViewController.swift */; };
 		DCB7DF941ED11CEA001FE652 /* GitHubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7DF931ED11CEA001FE652 /* GitHubService.swift */; };
+		DCB7DF9E1ED1277C001FE652 /* LaunchViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7DF9D1ED1277C001FE652 /* LaunchViewControllerSpec.swift */; };
+		DCB7DFA01ED12B2E001FE652 /* OctoViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7DF9F1ED12B2E001FE652 /* OctoViewer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,11 +39,13 @@
 		DC23AFCF1ED0E23B00D42C46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC23AFD11ED0E23B00D42C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC23AFD61ED0E23B00D42C46 /* OctoViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OctoViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC23AFDA1ED0E23B00D42C46 /* OctoViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctoViewerTests.swift; sourceTree = "<group>"; };
 		DC23AFDC1ED0E23B00D42C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DCB7DF8F1ED11953001FE652 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		DCB7DF8F1ED11953001FE652 /* Splash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		DCB7DF911ED11C22001FE652 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		DCB7DF931ED11CEA001FE652 /* GitHubService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubService.swift; sourceTree = "<group>"; };
+		DCB7DF9C1ED1277C001FE652 /* OctoViewerTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OctoViewerTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		DCB7DF9D1ED1277C001FE652 /* LaunchViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewControllerSpec.swift; sourceTree = "<group>"; };
+		DCB7DF9F1ED12B2E001FE652 /* OctoViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OctoViewer.swift; sourceTree = "<group>"; };
 		E44E07900A3787E13E262C48 /* Pods-OctoViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-OctoViewer/Pods-OctoViewer.release.xcconfig"; sourceTree = "<group>"; };
 		EFF80637A16DB5856BD65C09 /* Pods-OctoViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OctoViewer/Pods-OctoViewer.debug.xcconfig"; sourceTree = "<group>"; };
 		FA997E71DFF84BC470ED9CE7 /* Pods_OctoViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OctoViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,9 +114,9 @@
 		DC23AFC41ED0E23B00D42C46 /* OctoViewer */ = {
 			isa = PBXGroup;
 			children = (
-				DCB7DF991ED1244D001FE652 /* Extensions */,
 				DC23AFC51ED0E23B00D42C46 /* AppDelegate.swift */,
 				DC23AFCC1ED0E23B00D42C46 /* Assets.xcassets */,
+				DCB7DF991ED1244D001FE652 /* Extensions */,
 				DC23AFD11ED0E23B00D42C46 /* Info.plist */,
 				DCB7DF8E1ED118D3001FE652 /* Models */,
 				DCB7DF8D1ED118CE001FE652 /* Networking */,
@@ -121,6 +124,7 @@
 				DCB7DF891ED118AF001FE652 /* Storyboards */,
 				DCB7DF8C1ED118C8001FE652 /* View Controllers */,
 				DCB7DF8B1ED118C4001FE652 /* Views */,
+				DCB7DF9F1ED12B2E001FE652 /* OctoViewer.swift */,
 			);
 			path = OctoViewer;
 			sourceTree = "<group>";
@@ -128,8 +132,9 @@
 		DC23AFD91ED0E23B00D42C46 /* OctoViewerTests */ = {
 			isa = PBXGroup;
 			children = (
-				DC23AFDA1ED0E23B00D42C46 /* OctoViewerTests.swift */,
 				DC23AFDC1ED0E23B00D42C46 /* Info.plist */,
+				DCB7DF9D1ED1277C001FE652 /* LaunchViewControllerSpec.swift */,
+				DCB7DF9C1ED1277C001FE652 /* OctoViewerTests-Bridging-Header.h */,
 			);
 			path = OctoViewerTests;
 			sourceTree = "<group>";
@@ -138,7 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				DC23AFCE1ED0E23B00D42C46 /* LaunchScreen.storyboard */,
-				DCB7DF8F1ED11953001FE652 /* Main.storyboard */,
+				DCB7DF8F1ED11953001FE652 /* Splash.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -250,6 +255,7 @@
 					DC23AFD51ED0E23B00D42C46 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 5RCR3KLKL5;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = DC23AFC11ED0E23B00D42C46;
 					};
@@ -281,7 +287,7 @@
 			files = (
 				DC23AFD01ED0E23B00D42C46 /* LaunchScreen.storyboard in Resources */,
 				DC23AFCD1ED0E23B00D42C46 /* Assets.xcassets in Resources */,
-				DCB7DF901ED11953001FE652 /* Main.storyboard in Resources */,
+				DCB7DF901ED11953001FE652 /* Splash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +414,7 @@
 			files = (
 				DC23AFC61ED0E23B00D42C46 /* AppDelegate.swift in Sources */,
 				DCB7DF941ED11CEA001FE652 /* GitHubService.swift in Sources */,
+				DCB7DFA01ED12B2E001FE652 /* OctoViewer.swift in Sources */,
 				DCB7DF921ED11C22001FE652 /* LaunchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,7 +423,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC23AFDB1ED0E23B00D42C46 /* OctoViewerTests.swift in Sources */,
+				DCB7DF9E1ED1277C001FE652 /* LaunchViewControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,7 +530,7 @@
 				DEVELOPMENT_TEAM = 5RCR3KLKL5;
 				INFOPLIST_FILE = OctoViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.viewthespace.OctoViewer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heshamsalman.OctoViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -537,7 +544,7 @@
 				DEVELOPMENT_TEAM = 5RCR3KLKL5;
 				INFOPLIST_FILE = OctoViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.viewthespace.OctoViewer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heshamsalman.OctoViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -549,11 +556,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 5RCR3KLKL5;
 				INFOPLIST_FILE = OctoViewerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.viewthespace.OctoViewerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OctoViewerTests/OctoViewerTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OctoViewer.app/OctoViewer";
 			};
@@ -565,11 +575,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 5RCR3KLKL5;
 				INFOPLIST_FILE = OctoViewerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.viewthespace.OctoViewerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OctoViewerTests/OctoViewerTests-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OctoViewer.app/OctoViewer";
 			};

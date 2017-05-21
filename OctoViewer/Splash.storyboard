@@ -29,7 +29,7 @@
         <!--Launch View Controller-->
         <scene sceneID="VGf-cf-Rtd">
             <objects>
-                <viewController id="rem-Am-cI4" customClass="LaunchViewController" customModule="OctoViewer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LaunchViewController" id="rem-Am-cI4" customClass="LaunchViewController" customModule="OctoViewer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TcD-4P-IjV"/>
                         <viewControllerLayoutGuide type="bottom" id="JDV-3g-nIC"/>
