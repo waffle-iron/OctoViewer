@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF81631F911D99C510E66B70 /* Pods_OctoViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA997E71DFF84BC470ED9CE7 /* Pods_OctoViewer.framework */; };
+		C4835AA516D6D3F19B20C9A2 /* Pods_OctoViewerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C75B3DD445960FE3D941A6 /* Pods_OctoViewerTests.framework */; };
 		DC23AFC61ED0E23B00D42C46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC23AFC51ED0E23B00D42C46 /* AppDelegate.swift */; };
-		DC23AFC81ED0E23B00D42C46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC23AFC71ED0E23B00D42C46 /* ViewController.swift */; };
-		DC23AFCB1ED0E23B00D42C46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC23AFC91ED0E23B00D42C46 /* Main.storyboard */; };
 		DC23AFCD1ED0E23B00D42C46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC23AFCC1ED0E23B00D42C46 /* Assets.xcassets */; };
 		DC23AFD01ED0E23B00D42C46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC23AFCE1ED0E23B00D42C46 /* LaunchScreen.storyboard */; };
 		DC23AFDB1ED0E23B00D42C46 /* OctoViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC23AFDA1ED0E23B00D42C46 /* OctoViewerTests.swift */; };
+		DCB7DF901ED11953001FE652 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCB7DF8F1ED11953001FE652 /* Main.storyboard */; };
+		DCB7DF921ED11C22001FE652 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7DF911ED11C22001FE652 /* LaunchViewController.swift */; };
+		DCB7DF941ED11CEA001FE652 /* GitHubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7DF931ED11CEA001FE652 /* GitHubService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +29,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18C75B3DD445960FE3D941A6 /* Pods_OctoViewerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OctoViewerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36F2CFC3FD573859BBBB6EFC /* Pods-OctoViewerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoViewerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OctoViewerTests/Pods-OctoViewerTests.release.xcconfig"; sourceTree = "<group>"; };
+		59B2EB292CC8451265AA05A2 /* Pods-OctoViewerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoViewerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OctoViewerTests/Pods-OctoViewerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DC23AFC21ED0E23B00D42C46 /* OctoViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OctoViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC23AFC51ED0E23B00D42C46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC23AFC71ED0E23B00D42C46 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DC23AFCA1ED0E23B00D42C46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC23AFCC1ED0E23B00D42C46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC23AFCF1ED0E23B00D42C46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC23AFD11ED0E23B00D42C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC23AFD61ED0E23B00D42C46 /* OctoViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OctoViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC23AFDA1ED0E23B00D42C46 /* OctoViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctoViewerTests.swift; sourceTree = "<group>"; };
 		DC23AFDC1ED0E23B00D42C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCB7DF8F1ED11953001FE652 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		DCB7DF911ED11C22001FE652 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		DCB7DF931ED11CEA001FE652 /* GitHubService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubService.swift; sourceTree = "<group>"; };
+		E44E07900A3787E13E262C48 /* Pods-OctoViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-OctoViewer/Pods-OctoViewer.release.xcconfig"; sourceTree = "<group>"; };
+		EFF80637A16DB5856BD65C09 /* Pods-OctoViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OctoViewer/Pods-OctoViewer.debug.xcconfig"; sourceTree = "<group>"; };
+		FA997E71DFF84BC470ED9CE7 /* Pods_OctoViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OctoViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF81631F911D99C510E66B70 /* Pods_OctoViewer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +61,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4835AA516D6D3F19B20C9A2 /* Pods_OctoViewerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		90B1AE61D5D6D913BE9B5F36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA997E71DFF84BC470ED9CE7 /* Pods_OctoViewer.framework */,
+				18C75B3DD445960FE3D941A6 /* Pods_OctoViewerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C50E58C6E242D56C072A2E6F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EFF80637A16DB5856BD65C09 /* Pods-OctoViewer.debug.xcconfig */,
+				E44E07900A3787E13E262C48 /* Pods-OctoViewer.release.xcconfig */,
+				59B2EB292CC8451265AA05A2 /* Pods-OctoViewerTests.debug.xcconfig */,
+				36F2CFC3FD573859BBBB6EFC /* Pods-OctoViewerTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DC23AFB91ED0E23B00D42C46 = {
 			isa = PBXGroup;
 			children = (
 				DC23AFC41ED0E23B00D42C46 /* OctoViewer */,
 				DC23AFD91ED0E23B00D42C46 /* OctoViewerTests */,
 				DC23AFC31ED0E23B00D42C46 /* Products */,
+				C50E58C6E242D56C072A2E6F /* Pods */,
+				90B1AE61D5D6D913BE9B5F36 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +111,16 @@
 		DC23AFC41ED0E23B00D42C46 /* OctoViewer */ = {
 			isa = PBXGroup;
 			children = (
+				DCB7DF991ED1244D001FE652 /* Extensions */,
 				DC23AFC51ED0E23B00D42C46 /* AppDelegate.swift */,
-				DC23AFC71ED0E23B00D42C46 /* ViewController.swift */,
-				DC23AFC91ED0E23B00D42C46 /* Main.storyboard */,
 				DC23AFCC1ED0E23B00D42C46 /* Assets.xcassets */,
-				DC23AFCE1ED0E23B00D42C46 /* LaunchScreen.storyboard */,
 				DC23AFD11ED0E23B00D42C46 /* Info.plist */,
+				DCB7DF8E1ED118D3001FE652 /* Models */,
+				DCB7DF8D1ED118CE001FE652 /* Networking */,
+				DCB7DF8A1ED118BF001FE652 /* Nibs */,
+				DCB7DF891ED118AF001FE652 /* Storyboards */,
+				DCB7DF8C1ED118C8001FE652 /* View Controllers */,
+				DCB7DF8B1ED118C4001FE652 /* Views */,
 			);
 			path = OctoViewer;
 			sourceTree = "<group>";
@@ -96,6 +134,59 @@
 			path = OctoViewerTests;
 			sourceTree = "<group>";
 		};
+		DCB7DF891ED118AF001FE652 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DC23AFCE1ED0E23B00D42C46 /* LaunchScreen.storyboard */,
+				DCB7DF8F1ED11953001FE652 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		DCB7DF8A1ED118BF001FE652 /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Nibs;
+			sourceTree = "<group>";
+		};
+		DCB7DF8B1ED118C4001FE652 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		DCB7DF8C1ED118C8001FE652 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DCB7DF911ED11C22001FE652 /* LaunchViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		DCB7DF8D1ED118CE001FE652 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DCB7DF931ED11CEA001FE652 /* GitHubService.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		DCB7DF8E1ED118D3001FE652 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		DCB7DF991ED1244D001FE652 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +194,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC23AFDF1ED0E23B00D42C46 /* Build configuration list for PBXNativeTarget "OctoViewer" */;
 			buildPhases = (
+				14DBDABDAF89FA1A24591AFC /* [CP] Check Pods Manifest.lock */,
 				DC23AFBE1ED0E23B00D42C46 /* Sources */,
 				DC23AFBF1ED0E23B00D42C46 /* Frameworks */,
 				DC23AFC01ED0E23B00D42C46 /* Resources */,
+				DC23AFE51ED0E53B00D42C46 /* SwiftLint */,
+				92BDF113D5145CD4863A98B4 /* [CP] Embed Pods Frameworks */,
+				8B7FFEB8970388B6FCBEACBB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +215,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC23AFE21ED0E23B00D42C46 /* Build configuration list for PBXNativeTarget "OctoViewerTests" */;
 			buildPhases = (
+				C244242D7883C0C0F7FAD21C /* [CP] Check Pods Manifest.lock */,
 				DC23AFD21ED0E23B00D42C46 /* Sources */,
 				DC23AFD31ED0E23B00D42C46 /* Frameworks */,
 				DC23AFD41ED0E23B00D42C46 /* Resources */,
+				317D5B8EF27B7F5D535D5AF3 /* [CP] Embed Pods Frameworks */,
+				EA3FE5FB7721488380D06105 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -183,7 +281,7 @@
 			files = (
 				DC23AFD01ED0E23B00D42C46 /* LaunchScreen.storyboard in Resources */,
 				DC23AFCD1ED0E23B00D42C46 /* Assets.xcassets in Resources */,
-				DC23AFCB1ED0E23B00D42C46 /* Main.storyboard in Resources */,
+				DCB7DF901ED11953001FE652 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,13 +294,121 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14DBDABDAF89FA1A24591AFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		317D5B8EF27B7F5D535D5AF3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OctoViewerTests/Pods-OctoViewerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B7FFEB8970388B6FCBEACBB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OctoViewer/Pods-OctoViewer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92BDF113D5145CD4863A98B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OctoViewer/Pods-OctoViewer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C244242D7883C0C0F7FAD21C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DC23AFE51ED0E53B00D42C46 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
+		};
+		EA3FE5FB7721488380D06105 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OctoViewerTests/Pods-OctoViewerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DC23AFBE1ED0E23B00D42C46 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC23AFC81ED0E23B00D42C46 /* ViewController.swift in Sources */,
 				DC23AFC61ED0E23B00D42C46 /* AppDelegate.swift in Sources */,
+				DCB7DF941ED11CEA001FE652 /* GitHubService.swift in Sources */,
+				DCB7DF921ED11C22001FE652 /* LaunchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,14 +431,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DC23AFC91ED0E23B00D42C46 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DC23AFCA1ED0E23B00D42C46 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DC23AFCE1ED0E23B00D42C46 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -254,18 +452,10 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -279,11 +469,9 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -304,18 +492,10 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -323,11 +503,9 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -339,6 +517,7 @@
 		};
 		DC23AFE01ED0E23B00D42C46 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFF80637A16DB5856BD65C09 /* Pods-OctoViewer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5RCR3KLKL5;
@@ -352,6 +531,7 @@
 		};
 		DC23AFE11ED0E23B00D42C46 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E44E07900A3787E13E262C48 /* Pods-OctoViewer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5RCR3KLKL5;
@@ -365,6 +545,7 @@
 		};
 		DC23AFE31ED0E23B00D42C46 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59B2EB292CC8451265AA05A2 /* Pods-OctoViewerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -380,6 +561,7 @@
 		};
 		DC23AFE41ED0E23B00D42C46 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36F2CFC3FD573859BBBB6EFC /* Pods-OctoViewerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -412,6 +594,7 @@
 				DC23AFE11ED0E23B00D42C46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DC23AFE21ED0E23B00D42C46 /* Build configuration list for PBXNativeTarget "OctoViewerTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +603,7 @@
 				DC23AFE41ED0E23B00D42C46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,6 @@
+framework module Pods_OctoViewer {
+  umbrella header "Pods-OctoViewer-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,33 @@
+opt_in_rules: # some rules are only opt-in
+  - empty_count
+  - redundant_nil_coalescing
+  - switch_case_on_newline
+  - nimble_operator
+  - force_unwrapping
+  - conditional_returns_on_newline
+  - closure_spacing
+included: # paths to include during linting. `--path` is ignored if present.
+  - OctoViewer
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Pods
+
+force_cast: warning
+weak_delegate: error
+force_try:
+  severity: warning
+line_length: 140
+type_body_length:
+  warning: 300
+  error: 400
+file_length:
+  warning: 500
+  error: 1200
+identifier_name:
+  min_length:
+    error: 4
+  excluded:
+    - all
+    - get
+    - put
+    - zen
+reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, junit, emoji)
