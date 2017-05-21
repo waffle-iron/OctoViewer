@@ -28,7 +28,7 @@ class LaunchViewController: UIViewController {
         self?.zenLabel.text = response
       case let .failed(error):
         print("Zen Error: \(error)")
-      case .completed, .interrupted:
+      default:
         break
       }
     }
