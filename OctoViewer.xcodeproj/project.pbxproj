@@ -44,6 +44,8 @@
 		DC23AFD11ED0E23B00D42C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC23AFD61ED0E23B00D42C46 /* OctoViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OctoViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC23AFDC1ED0E23B00D42C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC842A211ED38E9C0032FB90 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
+		DC842A221ED38FC60032FB90 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		DCB7DF8F1ED11953001FE652 /* Splash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		DCB7DF911ED11C22001FE652 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		DCB7DF931ED11CEA001FE652 /* GitHubService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubService.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 		DC23AFB91ED0E23B00D42C46 = {
 			isa = PBXGroup;
 			children = (
+				DC842A231ED38FDE0032FB90 /* Configurations */,
 				DC23AFC41ED0E23B00D42C46 /* OctoViewer */,
 				DC23AFD91ED0E23B00D42C46 /* OctoViewerTests */,
 				DC23AFC31ED0E23B00D42C46 /* Products */,
@@ -129,6 +132,15 @@
 				DCB7DF9C1ED1277C001FE652 /* OctoViewerTests-Bridging-Header.h */,
 			);
 			path = OctoViewerTests;
+			sourceTree = "<group>";
+		};
+		DC842A231ED38FDE0032FB90 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				DC842A221ED38FC60032FB90 /* Debug.xcconfig */,
+				DC842A211ED38E9C0032FB90 /* Production.xcconfig */,
+			);
+			name = Configurations;
 			sourceTree = "<group>";
 		};
 		DCB7DF891ED118AF001FE652 /* Storyboards */ = {
@@ -550,7 +562,7 @@
 		};
 		DC23AFE01ED0E23B00D42C46 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E5C3290DF043077FAF3AF38 /* Pods-OctoViewer.debug.xcconfig */;
+			baseConfigurationReference = DC842A221ED38FC60032FB90 /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5RCR3KLKL5;
@@ -565,7 +577,7 @@
 		};
 		DC23AFE11ED0E23B00D42C46 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12BFC5060D86957E3F264555 /* Pods-OctoViewer.release.xcconfig */;
+			baseConfigurationReference = DC842A211ED38E9C0032FB90 /* Production.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5RCR3KLKL5;
