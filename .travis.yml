@@ -1,0 +1,6 @@
+language: swift
+osx_image: xcode8.3
+script:
+  - xcodebuild -scheme OctoViewer -workspace OctoViewer.xcworkspace -sdk iphonesimulator -destination 'name=iPhone 6S,OS=10.1' build test CODE_SIGNING_REQUIRED=NO
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
