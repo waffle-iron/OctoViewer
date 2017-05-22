@@ -14,6 +14,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7882152694482652D897F76F9DA312E9"
+               BuildableName = "Pods_OctoViewer.framework"
+               BlueprintName = "Pods-OctoViewer"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "DC23AFC11ED0E23B00D42C46"
                BuildableName = "OctoViewer.app"
                BlueprintName = "OctoViewer"
