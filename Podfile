@@ -6,6 +6,7 @@ def shared_pods
   pod 'Alamofire'
   pod 'Moya/ReactiveSwift'
   pod 'Moya-Gloss/ReactiveSwift'
+  pod 'ReachabilitySwift'
   pod 'ReactiveCocoa'
   pod 'ReactiveSwift'
   pod 'ReusableViews'

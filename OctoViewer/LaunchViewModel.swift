@@ -25,6 +25,8 @@ import ReactiveSwift
 import Result
 
 protocol LaunchViewModelInputs {
+  func loginButtonTapped()
+  func continueButtonTapped()
   var provider: ReactiveSwiftMoyaProvider<GitHubService> { get }
 }
 
@@ -46,6 +48,16 @@ final class LaunchViewModel: LaunchViewModelType, LaunchViewModelInputs, LaunchV
 
   var provider: ReactiveSwiftMoyaProvider<GitHubService>
   let koanText: SignalProducer<String, MoyaError>
+
+  private let loginButtonTappedProperty = MutableProperty()
+  func loginButtonTapped() {
+    loginButtonTappedProperty.value = ()
+  }
+
+  private let actionButtonTappedProperty = MutableProperty()
+  func continueButtonTapped() {
+    actionButtonTappedProperty.value = ()
+  }
 
   var inputs: LaunchViewModelInputs { return self }
   var outputs: LaunchViewModelOutputs { return self }

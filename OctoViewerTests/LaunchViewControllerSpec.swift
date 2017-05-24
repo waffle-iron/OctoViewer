@@ -54,19 +54,11 @@ class LaunchViewControllerSpec: QuickSpec {
         beforeEach {
           controller.viewWillAppear(false)
         }
-
-        it("has a hidden navigation bar") {
-          expect(controller.navigationController?.isNavigationBarHidden).to(beTrue())
-        }
       }
 
       context("when the view is not visible") {
         beforeEach {
           controller.viewWillDisappear(false)
-        }
-
-        it("has a visible navigation bar") {
-          expect(controller.navigationController?.isNavigationBarHidden).to(beFalse())
         }
       }
     }

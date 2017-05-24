@@ -27,33 +27,28 @@ import Moya
 class LaunchViewController: UIViewController {
 
   var viewModel: LaunchViewModelType = LaunchViewModel()
-  @IBOutlet weak var titleLabel: UILabel!
+  @IBOutlet private weak var titleLabel: UILabel!
   @IBOutlet weak var zenLabel: UILabel!
-  @IBOutlet weak var loginButton: UIButton!
-  @IBOutlet weak var signupButton: UIButton!
+  @IBOutlet private weak var loginButton: UIButton!
+  @IBOutlet private weak var signupButton: UIButton!
 
   override func viewDidLoad() {
     super.viewDidLoad()
     viewModel.outputs.koanText.start { [weak self] event in
-      switch event {
-      case let .value(response):
+      if case let .value(response) = event {
         self?.zenLabel.text = response
-      case let .failed(error):
-        print("Zen Error: \(error)")
-      default:
-        break
       }
     }
   }
 
-  override func viewWillAppear(_ animated: Bool) {
-    super.viewWillAppear(animated)
-    navigationController?.setNavigationBarHidden(true, animated: animated)
+  @IBAction
+  func loginButtonTapped(_ sender: UIButton) {
+
   }
 
-  override func viewWillDisappear(_ animated: Bool) {
-    super.viewWillDisappear(animated)
-    navigationController?.setNavigationBarHidden(false, animated: animated)
+  @IBAction
+  func signupButtonTapped(_ sender: UIButton) {
+
   }
 
 }

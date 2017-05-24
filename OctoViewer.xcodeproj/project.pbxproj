@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		D2140290DF609C73C74A59F3 /* Pods_OctoViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB4695A5E34757E28663B64B /* Pods_OctoViewer.framework */; };
+		DC09F4981ED634B90031B510 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F4971ED634B90031B510 /* Networking.swift */; };
+		DC09F49A1ED6367E0031B510 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F4991ED6367E0031B510 /* APIKeys.swift */; };
+		DC09F49D1ED63D400031B510 /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F49C1ED63D400031B510 /* GlobalFunctions.swift */; };
 		DC23AFC61ED0E23B00D42C46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC23AFC51ED0E23B00D42C46 /* AppDelegate.swift */; };
 		DC23AFCD1ED0E23B00D42C46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC23AFCC1ED0E23B00D42C46 /* Assets.xcassets */; };
 		DC23AFD01ED0E23B00D42C46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC23AFCE1ED0E23B00D42C46 /* LaunchScreen.storyboard */; };
@@ -38,6 +41,9 @@
 		95BFC58630C0C7C0C9FB1A0C /* Pods-OctoViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OctoViewer/Pods-OctoViewer.debug.xcconfig"; sourceTree = "<group>"; };
 		9ED538A064DB6D4CC1F3E4E1 /* Pods-OctoViewerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoViewerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OctoViewerTests/Pods-OctoViewerTests.release.xcconfig"; sourceTree = "<group>"; };
 		DB4695A5E34757E28663B64B /* Pods_OctoViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OctoViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC09F4971ED634B90031B510 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		DC09F4991ED6367E0031B510 /* APIKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		DC09F49C1ED63D400031B510 /* GlobalFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
 		DC23AFC21ED0E23B00D42C46 /* OctoViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OctoViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC23AFC51ED0E23B00D42C46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC23AFCC1ED0E23B00D42C46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -97,6 +103,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DC09F49B1ED63D2F0031B510 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DC09F49C1ED63D400031B510 /* GlobalFunctions.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		DC23AFB91ED0E23B00D42C46 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +135,7 @@
 		DC23AFC41ED0E23B00D42C46 /* OctoViewer */ = {
 			isa = PBXGroup;
 			children = (
+				DC09F49B1ED63D2F0031B510 /* Helpers */,
 				DC23AFC51ED0E23B00D42C46 /* AppDelegate.swift */,
 				DC23AFCC1ED0E23B00D42C46 /* Assets.xcassets */,
 				DCB7DF991ED1244D001FE652 /* Extensions */,
@@ -191,6 +206,8 @@
 			isa = PBXGroup;
 			children = (
 				DCB7DF931ED11CEA001FE652 /* GitHubService.swift */,
+				DC09F4971ED634B90031B510 /* Networking.swift */,
+				DC09F4991ED6367E0031B510 /* APIKeys.swift */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -441,6 +458,9 @@
 			files = (
 				DC23AFC61ED0E23B00D42C46 /* AppDelegate.swift in Sources */,
 				DCB7DF941ED11CEA001FE652 /* GitHubService.swift in Sources */,
+				DC09F49D1ED63D400031B510 /* GlobalFunctions.swift in Sources */,
+				DC09F49A1ED6367E0031B510 /* APIKeys.swift in Sources */,
+				DC09F4981ED634B90031B510 /* Networking.swift in Sources */,
 				DCB7DFA01ED12B2E001FE652 /* OctoViewer.swift in Sources */,
 				DCB7DFA31ED1D622001FE652 /* LaunchViewModel.swift in Sources */,
 				DCB7DF921ED11C22001FE652 /* LaunchViewController.swift in Sources */,

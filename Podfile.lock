@@ -18,6 +18,7 @@ PODS:
     - ReactiveSwift (~> 1.1)
   - Nimble (7.0.0)
   - Quick (1.1.0)
+  - ReachabilitySwift (3)
   - ReactiveCocoa (5.0.3):
     - ReactiveSwift (~> 1.1)
   - ReactiveSwift (1.1.3):
@@ -32,6 +33,7 @@ DEPENDENCIES:
   - Moya/ReactiveSwift
   - Nimble
   - Quick
+  - ReachabilitySwift
   - ReactiveCocoa
   - ReactiveSwift
   - ReusableViews
@@ -44,12 +46,13 @@ SPEC CHECKSUMS:
   Moya-Gloss: 59a96de0673f555e080afb381f8c4f932ae9fb1a
   Nimble: 874982b605d4d752fcac6be695d13c502de84b1b
   Quick: dafc587e21eed9f4cab3249b9f9015b0b7a7f71d
+  ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
   ReactiveCocoa: 066a855f613fb72f68258771095805fdb10312d2
   ReactiveSwift: f54ba12c2e799003432930fa55495315ae44f32b
   Result: 4edd39003fdccf281d418ee1b006571f70123250
   ReusableViews: dbada69ff24d5310d05e20e4095c93175b205d8c
   SwiftLint: b467d08f5b25dc3b3cfed243d8e1b74b91714c67
 
-PODFILE CHECKSUM: 191bc8dfe642fa3e94e5832aa3297029354d2831
+PODFILE CHECKSUM: fd2086cef0e0f57b7ae46ee4f9c5bb3c26fa217b
 
 COCOAPODS: 1.2.1
