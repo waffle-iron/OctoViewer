@@ -57,3 +57,4 @@ struct Networking: NetworkingType {
   typealias T = GitHubService
   let provider: OnlineProvider<GitHubService>
 }
+

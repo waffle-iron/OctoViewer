@@ -30,6 +30,6 @@ func connectedToInternetOrStubbing() -> SignalProducer<Bool, NoError> {
   guard let online = reachabilityManager?.isReachable else {
     return stubResponseProperty.producer
   }
-  stubResponseProperty.value = stubResponseProperty.value || online
-  return stubResponseProperty.producer
+  let onlineProperty: MutableProperty<Bool> = MutableProperty(online)
+  return onlineProperty.producer.or(stubResponseProperty.producer)
 }
