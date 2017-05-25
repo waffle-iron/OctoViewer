@@ -17,7 +17,6 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-
 import Foundation
 
 private let minimumKeyLength = 2
@@ -61,8 +60,7 @@ struct APIKeys {
       let clientSecret = dictionary[Keys.clientSecret] as? String else {
       fatalError("Client ID and Secret don't exist in the current xcconfig or are not referenced in Info.plist")
     }
-    self.clientId = clientId
-    self.clientSecret = clientSecret
+    self.init(clientId: clientId, secret: clientSecret)
   }
 }
 

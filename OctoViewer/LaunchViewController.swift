@@ -19,8 +19,7 @@
 //
 
 import UIKit
-import ReactiveSwift
-import ReactiveCocoa
+import RxSwift
 import Result
 import Moya
 
@@ -34,8 +33,8 @@ class LaunchViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    viewModel.outputs.koanText.start { [weak self] event in
-      if case let .value(response) = event {
+    viewModel.outputs.koanText.subscribe { [weak self] event in
+      if case let .next(response) = event {
         self?.zenLabel.text = response
       }
     }
@@ -43,12 +42,7 @@ class LaunchViewController: UIViewController {
 
   @IBAction
   func loginButtonTapped(_ sender: UIButton) {
-
-  }
-
-  @IBAction
-  func signupButtonTapped(_ sender: UIButton) {
-
+    viewModel.inputs.loginButtonTapped()
   }
 
 }

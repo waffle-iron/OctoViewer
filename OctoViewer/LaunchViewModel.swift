@@ -20,18 +20,16 @@
 
 import Foundation
 import Moya
-import ReactiveCocoa
-import ReactiveSwift
+import RxSwift
 import Result
 
 protocol LaunchViewModelInputs {
   func loginButtonTapped()
-  func continueButtonTapped()
-  var provider: ReactiveSwiftMoyaProvider<GitHubService> { get }
+  var provider: RxMoyaProvider<GitHubService> { get }
 }
 
 protocol LaunchViewModelOutputs {
-  var koanText: SignalProducer<String, MoyaError> { get }
+  var koanText: Observable<String> { get }
 }
 
 protocol LaunchViewModelType {
@@ -41,22 +39,17 @@ protocol LaunchViewModelType {
 
 final class LaunchViewModel: LaunchViewModelType, LaunchViewModelInputs, LaunchViewModelOutputs {
 
-  init(provider: ReactiveSwiftMoyaProvider<GitHubService> = ReactiveSwiftMoyaProvider()) {
+  init(provider: RxMoyaProvider<GitHubService> = RxMoyaProvider()) {
     self.provider = provider
     koanText = provider.request(.zen).mapString()
   }
 
-  var provider: ReactiveSwiftMoyaProvider<GitHubService>
-  let koanText: SignalProducer<String, MoyaError>
+  var provider: RxMoyaProvider<GitHubService>
+  let koanText: Observable<String>
 
-  private let loginButtonTappedProperty = MutableProperty()
+  private let loginButtonTappedProperty = Variable()
   func loginButtonTapped() {
     loginButtonTappedProperty.value = ()
-  }
-
-  private let actionButtonTappedProperty = MutableProperty()
-  func continueButtonTapped() {
-    actionButtonTappedProperty.value = ()
   }
 
   var inputs: LaunchViewModelInputs { return self }

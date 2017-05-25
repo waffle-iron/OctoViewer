@@ -31,7 +31,7 @@ class LaunchViewControllerSpec: QuickSpec {
     beforeEach {
       controller = UIStoryboard(name: "Splash", bundle: OctoViewer.bundle).instantiateViewControllerOfType(LaunchViewController.self)
       controller.loadView()
-      controller.viewModel = LaunchViewModel(provider:  ReactiveSwiftMoyaProvider(stubClosure: MoyaProvider.immediatelyStub))
+      controller.viewModel = LaunchViewModel(provider:  RxMoyaProvider(stubClosure: MoyaProvider.immediatelyStub))
     }
 
     describe("networking") {

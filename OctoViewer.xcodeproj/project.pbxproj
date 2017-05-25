@@ -11,6 +11,8 @@
 		DC09F4981ED634B90031B510 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F4971ED634B90031B510 /* Networking.swift */; };
 		DC09F49A1ED6367E0031B510 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F4991ED6367E0031B510 /* APIKeys.swift */; };
 		DC09F49D1ED63D400031B510 /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F49C1ED63D400031B510 /* GlobalFunctions.swift */; };
+		DC09F5651ED75E080031B510 /* Observable+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F5641ED75E080031B510 /* Observable+Operators.swift */; };
+		DC09F5671ED762BA0031B510 /* APIKeysSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F5661ED762BA0031B510 /* APIKeysSpec.swift */; };
 		DC23AFC61ED0E23B00D42C46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC23AFC51ED0E23B00D42C46 /* AppDelegate.swift */; };
 		DC23AFCD1ED0E23B00D42C46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC23AFCC1ED0E23B00D42C46 /* Assets.xcassets */; };
 		DC23AFD01ED0E23B00D42C46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC23AFCE1ED0E23B00D42C46 /* LaunchScreen.storyboard */; };
@@ -44,6 +46,8 @@
 		DC09F4971ED634B90031B510 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		DC09F4991ED6367E0031B510 /* APIKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
 		DC09F49C1ED63D400031B510 /* GlobalFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
+		DC09F5641ED75E080031B510 /* Observable+Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Operators.swift"; sourceTree = "<group>"; };
+		DC09F5661ED762BA0031B510 /* APIKeysSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKeysSpec.swift; sourceTree = "<group>"; };
 		DC23AFC21ED0E23B00D42C46 /* OctoViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OctoViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC23AFC51ED0E23B00D42C46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC23AFCC1ED0E23B00D42C46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -158,6 +162,7 @@
 				DC23AFDC1ED0E23B00D42C46 /* Info.plist */,
 				DCB7DF9D1ED1277C001FE652 /* LaunchViewControllerSpec.swift */,
 				DCB7DF9C1ED1277C001FE652 /* OctoViewerTests-Bridging-Header.h */,
+				DC09F5661ED762BA0031B510 /* APIKeysSpec.swift */,
 			);
 			path = OctoViewerTests;
 			sourceTree = "<group>";
@@ -222,6 +227,7 @@
 		DCB7DF991ED1244D001FE652 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				DC09F5641ED75E080031B510 /* Observable+Operators.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -464,6 +470,7 @@
 				DCB7DFA01ED12B2E001FE652 /* OctoViewer.swift in Sources */,
 				DCB7DFA31ED1D622001FE652 /* LaunchViewModel.swift in Sources */,
 				DCB7DF921ED11C22001FE652 /* LaunchViewController.swift in Sources */,
+				DC09F5651ED75E080031B510 /* Observable+Operators.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +479,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCB7DF9E1ED1277C001FE652 /* LaunchViewControllerSpec.swift in Sources */,
+				DC09F5671ED762BA0031B510 /* APIKeysSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

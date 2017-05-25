@@ -17,35 +17,42 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-
 import Foundation
 import Moya
 import ReachabilitySwift
-import ReactiveSwift
-import Result
+import RxSwift
 
-class OnlineProvider<Target>: ReactiveSwiftMoyaProvider<Target> where Target: TargetType {
-  fileprivate let online: SignalProducer<Bool, NoError>
+class OnlineProvider<Target>: RxMoyaProvider<Target> where Target: TargetType {
+
+  fileprivate let online: Observable<Bool>
 
   init(endpointClosure: @escaping EndpointClosure = MoyaProvider.defaultEndpointMapping,
        requestClosure: @escaping RequestClosure = MoyaProvider.defaultRequestMapping,
        stubClosure: @escaping StubClosure = MoyaProvider.neverStub,
-       manager: Manager = ReactiveSwiftMoyaProvider<Target>.defaultAlamofireManager(),
+       manager: Manager = RxMoyaProvider<Target>.defaultAlamofireManager(),
        plugins: [PluginType] = [],
        trackInflights: Bool = false,
-       online: SignalProducer<Bool, NoError> = connectedToInternetOrStubbing()) {
+       online: Observable<Bool> = connectedToInternetOrStubbing()) {
+
     self.online = online
+    super.init(endpointClosure: endpointClosure,
+               requestClosure: requestClosure,
+               stubClosure: stubClosure,
+               manager: manager,
+               plugins: plugins,
+               trackInflights: trackInflights)
   }
 
-  override func request(_ token: Target) -> SignalProducer<Response, MoyaError> {
+  override func request(_ token: Target) -> Observable<Moya.Response> {
     let actualRequest = super.request(token)
     return online
-      .skip(while: { !$0 })
-      .take(first: 1).flatMap(.latest) { _ in
+      .ignore(value: false)  // Wait until we're online
+      .take(1)        // Take 1 to make sure we only invoke the API once.
+      .flatMap { _ in // Turn the online state into a network request
         return actualRequest
     }
-  }
 
+  }
 }
 
 protocol NetworkingType {
@@ -57,4 +64,3 @@ struct Networking: NetworkingType {
   typealias T = GitHubService
   let provider: OnlineProvider<GitHubService>
 }
-
