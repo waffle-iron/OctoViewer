@@ -29,6 +29,7 @@
 		DC09F5981ED8B2F30031B510 /* IssuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F5971ED8B2F30031B510 /* IssuesViewController.swift */; };
 		DC09F59A1ED8BA300031B510 /* StyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F5991ED8BA300031B510 /* StyleGuide.swift */; };
 		DC09F59C1ED8BFCD0031B510 /* OctoTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F59B1ED8BFCD0031B510 /* OctoTabBarController.swift */; };
+		DC09F59E1ED8C2E60031B510 /* LaunchViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F59D1ED8C2E60031B510 /* LaunchViewModelSpec.swift */; };
 		DC23AFC61ED0E23B00D42C46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC23AFC51ED0E23B00D42C46 /* AppDelegate.swift */; };
 		DC23AFCD1ED0E23B00D42C46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC23AFCC1ED0E23B00D42C46 /* Assets.xcassets */; };
 		DC23AFD01ED0E23B00D42C46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC23AFCE1ED0E23B00D42C46 /* LaunchScreen.storyboard */; };
@@ -80,6 +81,7 @@
 		DC09F5971ED8B2F30031B510 /* IssuesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssuesViewController.swift; sourceTree = "<group>"; };
 		DC09F5991ED8BA300031B510 /* StyleGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleGuide.swift; sourceTree = "<group>"; };
 		DC09F59B1ED8BFCD0031B510 /* OctoTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OctoTabBarController.swift; sourceTree = "<group>"; };
+		DC09F59D1ED8C2E60031B510 /* LaunchViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewModelSpec.swift; sourceTree = "<group>"; };
 		DC23AFC21ED0E23B00D42C46 /* OctoViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OctoViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC23AFC51ED0E23B00D42C46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC23AFCC1ED0E23B00D42C46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 				DCB7DF9D1ED1277C001FE652 /* LaunchViewControllerSpec.swift */,
 				DCB7DF9C1ED1277C001FE652 /* OctoViewerTests-Bridging-Header.h */,
 				DC09F5661ED762BA0031B510 /* APIKeysSpec.swift */,
+				DC09F59D1ED8C2E60031B510 /* LaunchViewModelSpec.swift */,
 			);
 			path = OctoViewerTests;
 			sourceTree = "<group>";
@@ -552,6 +555,7 @@
 			files = (
 				DCB7DF9E1ED1277C001FE652 /* LaunchViewControllerSpec.swift in Sources */,
 				DC09F5671ED762BA0031B510 /* APIKeysSpec.swift in Sources */,
+				DC09F59E1ED8C2E60031B510 /* LaunchViewModelSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
