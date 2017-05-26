@@ -26,6 +26,8 @@ struct Authenticate {
     static let scope = "scope"
     static let clientId = "client_id"
     static let clientSecret = "client_secret"
+
+    static let authToken = "auth_token"
   }
 
   fileprivate struct SharedAuthenticator {
@@ -62,9 +64,21 @@ struct Authenticate {
     return "repo"
   }
 
-  var accessToken: String?
+  var accessToken: String? {
+    get {
+      return UserDefaults.standard.string(forKey: Keys.authToken)
+    }
+
+    set {
+      UserDefaults.standard.set(newValue, forKey: Keys.authToken)
+    }
+  }
 
   var initialLoginUrl: URL {
     return URL(string: "https://www.github.com/login/oauth/authorize?\(Keys.clientId)=\(clientId)&\(Keys.scope)=\(scopes)")!
+  }
+
+  var isLoggedIn: Bool {
+    return accessToken != nil
   }
 }

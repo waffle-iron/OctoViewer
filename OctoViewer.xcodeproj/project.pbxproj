@@ -17,6 +17,18 @@
 		DC09F5751ED789130031B510 /* SafariPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F5741ED789130031B510 /* SafariPresenter.swift */; };
 		DC09F5771ED790C30031B510 /* Authenticate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F5761ED790C30031B510 /* Authenticate.swift */; };
 		DC09F5791ED7E3350031B510 /* AppDelegateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F5781ED7E3350031B510 /* AppDelegateViewModel.swift */; };
+		DC09F57C1ED86C330031B510 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F57B1ED86C330031B510 /* Coordinator.swift */; };
+		DC09F57E1ED86C770031B510 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F57D1ED86C770031B510 /* AppCoordinator.swift */; };
+		DC09F5801ED86D090031B510 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F57F1ED86D090031B510 /* LoginCoordinator.swift */; };
+		DC09F5821ED86D220031B510 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F5811ED86D220031B510 /* HomeCoordinator.swift */; };
+		DC09F5881ED87B000031B510 /* Octicons.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F5871ED87B000031B510 /* Octicons.swift */; };
+		DC09F58A1ED88B120031B510 /* octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC09F5891ED88B120031B510 /* octicons.ttf */; };
+		DC09F58E1ED89E480031B510 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC09F58D1ED89E480031B510 /* Home.storyboard */; };
+		DC09F5941ED8B0F50031B510 /* UIImage+Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F5931ED8B0F50031B510 /* UIImage+Icons.swift */; };
+		DC09F5961ED8B1450031B510 /* UIFont+Octicons.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F5951ED8B1450031B510 /* UIFont+Octicons.swift */; };
+		DC09F5981ED8B2F30031B510 /* IssuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F5971ED8B2F30031B510 /* IssuesViewController.swift */; };
+		DC09F59A1ED8BA300031B510 /* StyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F5991ED8BA300031B510 /* StyleGuide.swift */; };
+		DC09F59C1ED8BFCD0031B510 /* OctoTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F59B1ED8BFCD0031B510 /* OctoTabBarController.swift */; };
 		DC23AFC61ED0E23B00D42C46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC23AFC51ED0E23B00D42C46 /* AppDelegate.swift */; };
 		DC23AFCD1ED0E23B00D42C46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC23AFCC1ED0E23B00D42C46 /* Assets.xcassets */; };
 		DC23AFD01ED0E23B00D42C46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC23AFCE1ED0E23B00D42C46 /* LaunchScreen.storyboard */; };
@@ -56,6 +68,18 @@
 		DC09F5741ED789130031B510 /* SafariPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariPresenter.swift; sourceTree = "<group>"; };
 		DC09F5761ED790C30031B510 /* Authenticate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authenticate.swift; sourceTree = "<group>"; };
 		DC09F5781ED7E3350031B510 /* AppDelegateViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateViewModel.swift; sourceTree = "<group>"; };
+		DC09F57B1ED86C330031B510 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		DC09F57D1ED86C770031B510 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		DC09F57F1ED86D090031B510 /* LoginCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		DC09F5811ED86D220031B510 /* HomeCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		DC09F5871ED87B000031B510 /* Octicons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Octicons.swift; sourceTree = "<group>"; };
+		DC09F5891ED88B120031B510 /* octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = octicons.ttf; sourceTree = "<group>"; };
+		DC09F58D1ED89E480031B510 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		DC09F5931ED8B0F50031B510 /* UIImage+Icons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Icons.swift"; sourceTree = "<group>"; };
+		DC09F5951ED8B1450031B510 /* UIFont+Octicons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Octicons.swift"; sourceTree = "<group>"; };
+		DC09F5971ED8B2F30031B510 /* IssuesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssuesViewController.swift; sourceTree = "<group>"; };
+		DC09F5991ED8BA300031B510 /* StyleGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleGuide.swift; sourceTree = "<group>"; };
+		DC09F59B1ED8BFCD0031B510 /* OctoTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OctoTabBarController.swift; sourceTree = "<group>"; };
 		DC23AFC21ED0E23B00D42C46 /* OctoViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OctoViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC23AFC51ED0E23B00D42C46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC23AFCC1ED0E23B00D42C46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -119,9 +143,20 @@
 			isa = PBXGroup;
 			children = (
 				DC09F49C1ED63D400031B510 /* GlobalFunctions.swift */,
-				DC09F56C1ED76CD40031B510 /* Validation.swift */,
+				DC09F5991ED8BA300031B510 /* StyleGuide.swift */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		DC09F57A1ED86C1C0031B510 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				DC09F57B1ED86C330031B510 /* Coordinator.swift */,
+				DC09F57D1ED86C770031B510 /* AppCoordinator.swift */,
+				DC09F57F1ED86D090031B510 /* LoginCoordinator.swift */,
+				DC09F5811ED86D220031B510 /* HomeCoordinator.swift */,
+			);
+			name = Coordinators;
 			sourceTree = "<group>";
 		};
 		DC23AFB91ED0E23B00D42C46 = {
@@ -148,10 +183,12 @@
 		DC23AFC41ED0E23B00D42C46 /* OctoViewer */ = {
 			isa = PBXGroup;
 			children = (
-				DC09F49B1ED63D2F0031B510 /* Helpers */,
+				DC09F5891ED88B120031B510 /* octicons.ttf */,
 				DC23AFC51ED0E23B00D42C46 /* AppDelegate.swift */,
 				DC23AFCC1ED0E23B00D42C46 /* Assets.xcassets */,
+				DC09F57A1ED86C1C0031B510 /* Coordinators */,
 				DCB7DF991ED1244D001FE652 /* Extensions */,
+				DC09F49B1ED63D2F0031B510 /* Helpers */,
 				DC23AFD11ED0E23B00D42C46 /* Info.plist */,
 				DCB7DF8E1ED118D3001FE652 /* Models */,
 				DCB7DF8D1ED118CE001FE652 /* Networking */,
@@ -190,6 +227,7 @@
 			children = (
 				DC23AFCE1ED0E23B00D42C46 /* LaunchScreen.storyboard */,
 				DCB7DF8F1ED11953001FE652 /* Splash.storyboard */,
+				DC09F58D1ED89E480031B510 /* Home.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -212,6 +250,8 @@
 			isa = PBXGroup;
 			children = (
 				DCB7DF911ED11C22001FE652 /* LaunchViewController.swift */,
+				DC09F5971ED8B2F30031B510 /* IssuesViewController.swift */,
+				DC09F59B1ED8BFCD0031B510 /* OctoTabBarController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -229,8 +269,10 @@
 		DCB7DF8E1ED118D3001FE652 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DC09F56C1ED76CD40031B510 /* Validation.swift */,
 				DC09F5741ED789130031B510 /* SafariPresenter.swift */,
 				DC09F5761ED790C30031B510 /* Authenticate.swift */,
+				DC09F5871ED87B000031B510 /* Octicons.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -239,6 +281,8 @@
 			isa = PBXGroup;
 			children = (
 				DC09F5641ED75E080031B510 /* Observable+Operators.swift */,
+				DC09F5931ED8B0F50031B510 /* UIImage+Icons.swift */,
+				DC09F5951ED8B1450031B510 /* UIFont+Octicons.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -345,8 +389,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC09F58E1ED89E480031B510 /* Home.storyboard in Resources */,
 				DC38A1021ED399EA00FDFAAF /* (null) in Resources */,
 				DC38A1011ED399EA00FDFAAF /* (null) in Resources */,
+				DC09F58A1ED88B120031B510 /* octicons.ttf in Resources */,
 				DC23AFD01ED0E23B00D42C46 /* LaunchScreen.storyboard in Resources */,
 				DC23AFCD1ED0E23B00D42C46 /* Assets.xcassets in Resources */,
 				DCB7DF901ED11953001FE652 /* Splash.storyboard in Resources */,
@@ -477,15 +523,25 @@
 				DC09F5791ED7E3350031B510 /* AppDelegateViewModel.swift in Sources */,
 				DC23AFC61ED0E23B00D42C46 /* AppDelegate.swift in Sources */,
 				DCB7DF941ED11CEA001FE652 /* GitHubService.swift in Sources */,
+				DC09F5821ED86D220031B510 /* HomeCoordinator.swift in Sources */,
 				DC09F49D1ED63D400031B510 /* GlobalFunctions.swift in Sources */,
 				DC09F49A1ED6367E0031B510 /* APIKeys.swift in Sources */,
+				DC09F59A1ED8BA300031B510 /* StyleGuide.swift in Sources */,
+				DC09F5981ED8B2F30031B510 /* IssuesViewController.swift in Sources */,
 				DC09F4981ED634B90031B510 /* Networking.swift in Sources */,
+				DC09F57C1ED86C330031B510 /* Coordinator.swift in Sources */,
 				DCB7DFA01ED12B2E001FE652 /* OctoViewer.swift in Sources */,
 				DCB7DFA31ED1D622001FE652 /* LaunchViewModel.swift in Sources */,
+				DC09F5961ED8B1450031B510 /* UIFont+Octicons.swift in Sources */,
 				DC09F5771ED790C30031B510 /* Authenticate.swift in Sources */,
+				DC09F5881ED87B000031B510 /* Octicons.swift in Sources */,
 				DCB7DF921ED11C22001FE652 /* LaunchViewController.swift in Sources */,
+				DC09F59C1ED8BFCD0031B510 /* OctoTabBarController.swift in Sources */,
 				DC09F56D1ED76CD40031B510 /* Validation.swift in Sources */,
+				DC09F5941ED8B0F50031B510 /* UIImage+Icons.swift in Sources */,
+				DC09F57E1ED86C770031B510 /* AppCoordinator.swift in Sources */,
 				DC09F5751ED789130031B510 /* SafariPresenter.swift in Sources */,
+				DC09F5801ED86D090031B510 /* LoginCoordinator.swift in Sources */,
 				DC09F5651ED75E080031B510 /* Observable+Operators.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

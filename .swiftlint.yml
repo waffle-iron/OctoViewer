@@ -33,4 +33,13 @@ identifier_name:
     - ok
     - url
     - app
+    - x
+    - zap
+    - tag
+    - rss
+    - pin
+    - law
+    - key
+    - eye
+    - bug 
 reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, junit, emoji)

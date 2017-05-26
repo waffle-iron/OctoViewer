@@ -28,6 +28,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
   var viewModel: AppDelegateViewModelType = AppDelegateViewModel()
 
+  func application(_ application: UIApplication,
+                   didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+    window = UIWindow()
+    let navigationController = UINavigationController()
+    window?.rootViewController = navigationController
+    window?.makeKeyAndVisible()
+    let coordinator = AppCoordinator(navigationController: navigationController)
+    coordinator.start()
+    return true
+  }
+
   func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
     return viewModel.inputs.application(app: app, open: url, options: options)
   }
