@@ -13,6 +13,10 @@
 		DC09F49D1ED63D400031B510 /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F49C1ED63D400031B510 /* GlobalFunctions.swift */; };
 		DC09F5651ED75E080031B510 /* Observable+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F5641ED75E080031B510 /* Observable+Operators.swift */; };
 		DC09F5671ED762BA0031B510 /* APIKeysSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F5661ED762BA0031B510 /* APIKeysSpec.swift */; };
+		DC09F56D1ED76CD40031B510 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F56C1ED76CD40031B510 /* Validation.swift */; };
+		DC09F5751ED789130031B510 /* SafariPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F5741ED789130031B510 /* SafariPresenter.swift */; };
+		DC09F5771ED790C30031B510 /* Authenticate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F5761ED790C30031B510 /* Authenticate.swift */; };
+		DC09F5791ED7E3350031B510 /* AppDelegateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09F5781ED7E3350031B510 /* AppDelegateViewModel.swift */; };
 		DC23AFC61ED0E23B00D42C46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC23AFC51ED0E23B00D42C46 /* AppDelegate.swift */; };
 		DC23AFCD1ED0E23B00D42C46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC23AFCC1ED0E23B00D42C46 /* Assets.xcassets */; };
 		DC23AFD01ED0E23B00D42C46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC23AFCE1ED0E23B00D42C46 /* LaunchScreen.storyboard */; };
@@ -48,6 +52,10 @@
 		DC09F49C1ED63D400031B510 /* GlobalFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
 		DC09F5641ED75E080031B510 /* Observable+Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Operators.swift"; sourceTree = "<group>"; };
 		DC09F5661ED762BA0031B510 /* APIKeysSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKeysSpec.swift; sourceTree = "<group>"; };
+		DC09F56C1ED76CD40031B510 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		DC09F5741ED789130031B510 /* SafariPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariPresenter.swift; sourceTree = "<group>"; };
+		DC09F5761ED790C30031B510 /* Authenticate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authenticate.swift; sourceTree = "<group>"; };
+		DC09F5781ED7E3350031B510 /* AppDelegateViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateViewModel.swift; sourceTree = "<group>"; };
 		DC23AFC21ED0E23B00D42C46 /* OctoViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OctoViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC23AFC51ED0E23B00D42C46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC23AFCC1ED0E23B00D42C46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -111,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				DC09F49C1ED63D400031B510 /* GlobalFunctions.swift */,
+				DC09F56C1ED76CD40031B510 /* Validation.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -220,6 +229,8 @@
 		DCB7DF8E1ED118D3001FE652 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DC09F5741ED789130031B510 /* SafariPresenter.swift */,
+				DC09F5761ED790C30031B510 /* Authenticate.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -236,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				DCB7DFA21ED1D622001FE652 /* LaunchViewModel.swift */,
+				DC09F5781ED7E3350031B510 /* AppDelegateViewModel.swift */,
 			);
 			name = "View Models";
 			sourceTree = "<group>";
@@ -462,6 +474,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC09F5791ED7E3350031B510 /* AppDelegateViewModel.swift in Sources */,
 				DC23AFC61ED0E23B00D42C46 /* AppDelegate.swift in Sources */,
 				DCB7DF941ED11CEA001FE652 /* GitHubService.swift in Sources */,
 				DC09F49D1ED63D400031B510 /* GlobalFunctions.swift in Sources */,
@@ -469,7 +482,10 @@
 				DC09F4981ED634B90031B510 /* Networking.swift in Sources */,
 				DCB7DFA01ED12B2E001FE652 /* OctoViewer.swift in Sources */,
 				DCB7DFA31ED1D622001FE652 /* LaunchViewModel.swift in Sources */,
+				DC09F5771ED790C30031B510 /* Authenticate.swift in Sources */,
 				DCB7DF921ED11C22001FE652 /* LaunchViewController.swift in Sources */,
+				DC09F56D1ED76CD40031B510 /* Validation.swift in Sources */,
+				DC09F5751ED789130031B510 /* SafariPresenter.swift in Sources */,
 				DC09F5651ED75E080031B510 /* Observable+Operators.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

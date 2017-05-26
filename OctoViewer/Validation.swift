@@ -1,8 +1,8 @@
 //
-//  AppDelegate.swift
+//  Validation.swift
 //  OctoViewer
 //
-//  Created by Hesham Salman on 5/20/17.
+//  Created by Hesham Salman on 5/25/17.
 //  Copyright © 2017 Hesham Salman
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,20 +16,12 @@
 //  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
-//
 
-import UIKit
-import RxSwift
-import Moya
+import Foundation
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
-  var window: UIWindow?
-  var viewModel: AppDelegateViewModelType = AppDelegateViewModel()
-
-  func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
-    return viewModel.inputs.application(app: app, open: url, options: options)
-  }
-
+enum ValidationResult {
+  case ok(message: String)
+  case empty
+  case validating
+  case failed(message: String)
 }

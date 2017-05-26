@@ -1,8 +1,8 @@
 //
-//  AppDelegate.swift
+//  SafariPresenter.swift
 //  OctoViewer
 //
-//  Created by Hesham Salman on 5/20/17.
+//  Created by Hesham Salman on 5/25/17.
 //  Copyright © 2017 Hesham Salman
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,20 +16,23 @@
 //  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
-//
 
-import UIKit
-import RxSwift
-import Moya
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+import Foundation
+import SafariServices
 
-  var window: UIWindow?
-  var viewModel: AppDelegateViewModelType = AppDelegateViewModel()
-
-  func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
-    return viewModel.inputs.application(app: app, open: url, options: options)
+class SafariPresenter: NSObject {
+  func safariViewController(for url: URL) {
+    let controller = SFSafariViewController(url: url)
+    controller.delegate = self
+    UIApplication.shared.open(url, options: [:], completionHandler: nil)
   }
+}
 
+// MARK: - SFSafariViewControllerDelegate
+
+extension SafariPresenter: SFSafariViewControllerDelegate {
+  func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
+    controller.dismiss(animated: true, completion: nil)
+  }
 }

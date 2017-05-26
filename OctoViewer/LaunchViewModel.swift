@@ -24,7 +24,6 @@ import RxSwift
 import Result
 
 protocol LaunchViewModelInputs {
-  func loginButtonTapped()
   var provider: RxMoyaProvider<GitHubService> { get }
 }
 
@@ -46,11 +45,6 @@ final class LaunchViewModel: LaunchViewModelType, LaunchViewModelInputs, LaunchV
 
   var provider: RxMoyaProvider<GitHubService>
   let koanText: Observable<String>
-
-  private let loginButtonTappedProperty = Variable()
-  func loginButtonTapped() {
-    loginButtonTappedProperty.value = ()
-  }
 
   var inputs: LaunchViewModelInputs { return self }
   var outputs: LaunchViewModelOutputs { return self }

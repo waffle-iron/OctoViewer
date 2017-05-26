@@ -30,4 +30,7 @@ identifier_name:
     - get
     - put
     - zen
+    - ok
+    - url
+    - app
 reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, junit, emoji)

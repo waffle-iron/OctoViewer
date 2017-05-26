@@ -20,7 +20,6 @@
 
 import UIKit
 import RxSwift
-import Result
 import Moya
 
 class LaunchViewController: UIViewController {
@@ -30,6 +29,8 @@ class LaunchViewController: UIViewController {
   @IBOutlet weak var zenLabel: UILabel!
   @IBOutlet private weak var loginButton: UIButton!
   @IBOutlet private weak var signupButton: UIButton!
+
+  let safariPresenter = SafariPresenter()
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -42,7 +43,7 @@ class LaunchViewController: UIViewController {
 
   @IBAction
   func loginButtonTapped(_ sender: UIButton) {
-    viewModel.inputs.loginButtonTapped()
+    safariPresenter.safariViewController(for: Authenticate.shared.initialLoginUrl)
   }
 
 }

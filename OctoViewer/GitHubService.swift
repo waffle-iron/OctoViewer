@@ -23,15 +23,25 @@ import Moya
 
 enum GitHubService {
   case zen
+  case authenticate
 }
 
 // MARK: - TargetType Protocol Implementation
 //swiftlint:disable force_unwrapping
 extension GitHubService: TargetType {
-  var baseURL: URL { return URL(string: "https://api.github.com")! }
+  var baseURL: URL {
+    switch self {
+    case .authenticate:
+      return URL(string: "https://github.com")!
+    default:
+      return URL(string: "https://api.github.com")!
+    }
+  }
 
   var path: String {
     switch self {
+    case .authenticate:
+      return "/login/oauth/access_token"
     case .zen:
       return "/zen"
     }
@@ -41,6 +51,8 @@ extension GitHubService: TargetType {
     switch self {
     case .zen:
       return .get
+    case .authenticate:
+      return .post
     }
   }
 
@@ -48,6 +60,12 @@ extension GitHubService: TargetType {
     switch self {
     case .zen:
       return nil
+    case .authenticate:
+      return [
+        Authenticate.Keys.clientId: Authenticate.shared.clientId,
+        Authenticate.Keys.clientSecret: Authenticate.shared.clientSecret,
+        Authenticate.Keys.code: Authenticate.shared.code!
+      ]
     }
   }
 
@@ -55,6 +73,8 @@ extension GitHubService: TargetType {
     switch self {
     case .zen:
       return URLEncoding.default // Send parameters in URL, JSONEncoding.default to send JSON in request body
+    case .authenticate:
+      return JSONEncoding.default
     }
   }
 
@@ -62,12 +82,14 @@ extension GitHubService: TargetType {
     switch self {
     case .zen:
       return "Half measures are as bad as nothing at all.".utf8Encoded
+    case .authenticate:
+      return "access_token=fbae80845411bc06e5c29d95e39559ca462769c6&scope=repo&token_type=bearer".utf8Encoded
     }
   }
 
   var task: Task {
     switch self {
-    case .zen:
+    case .zen, .authenticate:
       return .request
     }
   }
