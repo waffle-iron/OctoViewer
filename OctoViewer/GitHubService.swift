@@ -83,7 +83,7 @@ extension GitHubService: TargetType {
     case .zen:
       return "Half measures are as bad as nothing at all.".utf8Encoded
     case .authenticate:
-      return "access_token=fbae80845411bc06e5c29d95e39559ca462769c6&scope=repo&token_type=bearer".utf8Encoded
+      return "access_token=XYZ_ABC_123_MJ_N_ME&scope=repo&token_type=bearer".utf8Encoded
     }
   }
 
